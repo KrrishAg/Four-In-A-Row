@@ -5,6 +5,14 @@ turns dropping coloured discs into a 7x6 grid, and the first to line up four
 discs horizontally, vertically, or diagonally wins. The AI opponent uses the
 Minimax algorithm with Alpha-Beta pruning to choose its moves.
 
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/menu.png" alt="Menu screen" width="32%">
+  <img src="screenshots/gameplay.png" alt="A game against the AI" width="32%">
+  <img src="screenshots/win.png" alt="Win screen with the winning discs highlighted" width="32%">
+</p>
+
 ## Running
 
 ```bash
@@ -48,8 +56,9 @@ Four_In_A_Row/
 │       ├── layout.py        window geometry
 │       ├── theme.py         colours and fonts
 │       └── settings.py      options chosen on the menu
-└── scripts/
-    └── benchmark.py         Minimax with and without pruning
+├── scripts/
+│   └── benchmark.py         Minimax with and without pruning
+└── screenshots/             images used in this README
 ```
 
 `core` and `ai` do not depend on Pygame, so the rules and the search can be
