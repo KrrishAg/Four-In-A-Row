@@ -48,16 +48,12 @@ Four_In_A_Row/
 │       ├── layout.py        window geometry
 │       ├── theme.py         colours and fonts
 │       └── settings.py      options chosen on the menu
-├── scripts/
-│   └── benchmark.py         Minimax with and without pruning
-└── tests/
-    ├── test_board.py        rules
-    ├── test_ai.py           evaluation and search
-    └── test_ui.py           drives the interface without a window
+└── scripts/
+    └── benchmark.py         Minimax with and without pruning
 ```
 
 `core` and `ai` do not depend on Pygame, so the rules and the search can be
-used and tested on their own.
+used on their own.
 
 ## How the AI works
 
@@ -88,9 +84,3 @@ Output of `python scripts/benchmark.py` on one mid-opening position:
 | 2 | 57 | 22 | 61.4% |
 | 4 | 2,801 | 295 | 89.5% |
 | 6 | 132,817 | 3,319 | 97.5% |
-
-## Tests
-
-```bash
-python -m unittest
-```
